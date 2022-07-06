@@ -1,7 +1,7 @@
-const fs = require("fs/promises");
-const path = require("node:path");
+const fs = require('fs/promises');
+const path = require('node:path');
 
-const contactsPath = path.join(__dirname, "db", "contacts.json");
+const contactsPath = path.join(__dirname, 'db', 'contacts.json');
 
 const listContacts = async () => {
   const data = await fs.readFile(contactsPath);
@@ -9,9 +9,9 @@ const listContacts = async () => {
   return contacts;
 };
 
-const getContactById = async (contactId) => {
+const getContactById = async contactId => {
   const contacts = await listContacts();
-  const foundContact = contacts.find((contact) => contact.id === contactId);
+  const foundContact = contacts.find(contact => contact.id === contactId);
 
   if (!foundContact) {
     return null;
@@ -20,13 +20,15 @@ const getContactById = async (contactId) => {
   return foundContact;
 };
 
-const removeContact = async (contactId) => {
-  // ...твой код
+const addContact = async (name, email, phone) => {
+  const contacts = await listContacts();
+  const newContact = { id: contacts.length + 1, name, email, phone };
+  contacts.push(newContact);
+  await fs.writeFile(contactsPath, JSON.stringify(contacts));
+  return newContact;
 };
 
-const addContact = (name, email, phone) => {
-  // ...твой код
-};
+const removeContact = async contactId => {};
 
 module.exports = {
   listContacts,
