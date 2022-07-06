@@ -1,14 +1,18 @@
-const fs = require("fs");
+const fs = require("fs/promises");
+const path = require("node:path");
 
-/*
- * Раскомментируй и запиши значение
- * const contactsPath = ;
- */
+const contactsPath = path.basename(
+  "D:\\GitHub\\nodejs-homework-01\\db\\contacts.json"
+);
 
 // TODO: задокументировать каждую функцию
-function listContacts() {
-  // ...твой код
-}
+
+const listContacts = async () => {
+  const contacts = await fs.readFile("./db/contacts.json", "utf-8");
+  console.log(contacts);
+};
+
+listContacts();
 
 function getContactById(contactId) {
   // ...твой код
@@ -22,7 +26,7 @@ function addContact(name, email, phone) {
   // ...твой код
 }
 
-fs.readFile("./db/contacts.json", (error, data) => {
-  console.log(error);
-  console.log(data);
-});
+// fs.readFile(contactsPath, (error, data) => {
+//   console.log(error);
+//   console.log(data);
+// });
