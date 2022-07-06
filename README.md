@@ -1,6 +1,6 @@
 # nodejs-homework-01
 
-list - https://monosnap.com/fileL6Ub4wDzVk4ZJcMY4DkqKDUQ64RvLP
+list - https://monosnap.com/file/L6Ub4wDzVk4ZJcMY4DkqKDUQ64RvLP
 
 get -https://monosnap.com/file/lcVvyXYVG81b2RXL1c94oYl47rGbx8
 
