@@ -1,3 +1,4 @@
+const { v4 } = require('uuid');
 const fs = require('fs/promises');
 const path = require('node:path');
 
@@ -22,13 +23,24 @@ const getContactById = async contactId => {
 
 const addContact = async (name, email, phone) => {
   const contacts = await listContacts();
-  const newContact = { id: contacts.length + 1, name, email, phone };
+  const newContact = { id: v4(), name, email, phone };
   contacts.push(newContact);
   await fs.writeFile(contactsPath, JSON.stringify(contacts));
   return newContact;
 };
 
-const removeContact = async contactId => {};
+const removeContact = async contactId => {
+  const contacts = await listContacts();
+  const index = contacts.findIndex(contact => contact.id === contactId);
+
+  if (index === -1) {
+    return null;
+  }
+
+  const removedContact = contacts.splice(index, 1);
+  await fs.writeFile(contactsPath, JSON.stringify(contacts));
+  return removedContact;
+};
 
 module.exports = {
   listContacts,
