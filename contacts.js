@@ -1,32 +1,29 @@
 const fs = require("fs/promises");
 const path = require("node:path");
 
-const contactsPath = path.basename(
-  "D:\\GitHub\\nodejs-homework-01\\db\\contacts.json"
-);
-
-// TODO: задокументировать каждую функцию
+const contactsPath = path.join(__dirname, "db", "contacts.json");
 
 const listContacts = async () => {
-  const contacts = await fs.readFile("./db/contacts.json", "utf-8");
-  console.log(contacts);
+  const data = await fs.readFile(contactsPath);
+  const contacts = JSON.parse(data);
+  return contacts;
 };
 
-listContacts();
-
-function getContactById(contactId) {
+const getContactById = async (contactId) => {
   // ...твой код
-}
+};
 
-function removeContact(contactId) {
+const removeContact = async (contactId) => {
   // ...твой код
-}
+};
 
-function addContact(name, email, phone) {
+const addContact = (name, email, phone) => {
   // ...твой код
-}
+};
 
-// fs.readFile(contactsPath, (error, data) => {
-//   console.log(error);
-//   console.log(data);
-// });
+module.exports = {
+  listContacts,
+  getContactById,
+  removeContact,
+  addContact,
+};
