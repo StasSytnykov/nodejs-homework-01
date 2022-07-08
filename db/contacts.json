@@ -1,1 +1,56 @@
-[{"id":"1","name":"Allen Raymond","email":"nulla.ante@vestibul.co.uk","phone":"(992) 914-3792"},{"id":"2","name":"Chaim Lewis","email":"dui.in@egetlacus.ca","phone":"(294) 840-6685"},{"id":"5","name":"Cyrus Jackson","email":"nibh@semsempererat.com","phone":"(501) 472-5218"},{"id":"6","name":"Abbot Franks","email":"scelerisque@magnis.org","phone":"(186) 568-3720"},{"id":"7","name":"Reuben Henry","email":"pharetra.ut@dictum.co.uk","phone":"(715) 598-5792"},{"id":"8","name":"Simon Morton","email":"dui.Fusce.diam@Donec.com","phone":"(233) 738-2360"},{"id":"294fe304-ce6e-4937-b24f-de22763018d6","name":"Mango","email":"mango@gmail.com","phone":"322-22-22"},{"id":"3ee02b35-152d-4ada-b598-64cfac8d6839","name":"Mango","email":"mango@gmail.com","phone":"322-22-22"},{"id":"9fb0510e-c08c-403c-88e2-7439d610c940","name":"Mango","email":"mango@gmail.com","phone":"322-22-22"},{"id":"0b49cbeb-34c9-44d4-a25d-05c8abc835fd","name":"Poly","email":"poly@gmail.com","phone":"122-123-321"}]
+[
+  {
+    "id": "1",
+    "name": "Allen Raymond",
+    "email": "nulla.ante@vestibul.co.uk",
+    "phone": "(992) 914-3792"
+  },
+  {
+    "id": "2",
+    "name": "Chaim Lewis",
+    "email": "dui.in@egetlacus.ca",
+    "phone": "(294) 840-6685"
+  },
+  {
+    "id": "5",
+    "name": "Cyrus Jackson",
+    "email": "nibh@semsempererat.com",
+    "phone": "(501) 472-5218"
+  },
+  {
+    "id": "6",
+    "name": "Abbot Franks",
+    "email": "scelerisque@magnis.org",
+    "phone": "(186) 568-3720"
+  },
+  {
+    "id": "7",
+    "name": "Reuben Henry",
+    "email": "pharetra.ut@dictum.co.uk",
+    "phone": "(715) 598-5792"
+  },
+  {
+    "id": "8",
+    "name": "Simon Morton",
+    "email": "dui.Fusce.diam@Donec.com",
+    "phone": "(233) 738-2360"
+  },
+  {
+    "id": "3ee02b35-152d-4ada-b598-64cfac8d6839",
+    "name": "Mango",
+    "email": "mango@gmail.com",
+    "phone": "322-22-22"
+  },
+  {
+    "id": "0b49cbeb-34c9-44d4-a25d-05c8abc835fd",
+    "name": "Poly",
+    "email": "poly@gmail.com",
+    "phone": "122-123-321"
+  },
+  {
+    "id": "a0129792-cd9f-4ae9-b3ef-60cb5f9d4f5f",
+    "name": "Puma",
+    "email": "puma@gmail.com",
+    "phone": "3522-522-522"
+  }
+]
